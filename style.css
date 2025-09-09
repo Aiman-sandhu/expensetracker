@@ -1,0 +1,101 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f6f9;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  color: #333;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* left - right */
+  gap: 25px; /* dono sides ke darmiyan gap */
+  width: 90%;
+  max-width: 1000px;
+}
+
+/* Heading full width */
+h1 {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 28px;
+  color: #2e7d32;
+  margin-bottom: 15px;
+}
+
+/* Card base style */
+.addExpense,
+.showExpense,
+.summary{
+  background: #fff;
+  border-radius: 12px;
+  padding: 5px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Left side form */
+.addExpense h3 {
+  margin-bottom: 12px;
+  font-size: 18px;
+  color: #444;
+}
+
+.addExpense input,
+.addExpense select {
+  width: 100%;
+  height: 42px; /* 👈 fix height for equal size */
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0 10px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+#ex-Btn {
+  background: #2e7d32;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  width: 100%;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+#ex-Btn:hover {
+  background: #388e3c;
+}
+
+/* Right column cards stack with gap */
+.right{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 78px;
+}
+/* Buttons inside showExpense */
+.showExpense {
+  min-height: 150px;
+  text-align: center;
+}
+.showExpense button {
+  background: #e0e0e0;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #333;
+}
+.showExpense button:hover {
+  background: #cfcfcf;
+}
+
+.summary h4{
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #444;
+}

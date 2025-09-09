@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+  <!-- Left Column -->
+  <div class="left">
+    <h1>Expense Tracker</h1>
+    <div class="addExpense">
+      <h3>Add Expense</h3>
+      <input type="text" id="ex-name" placeholder="Expense name">
+      <input type="number" id="ex-amount" placeholder="Amount">
+      <!-- <label for="category">Select Category:</label> -->
+    <select id="category" required>
+  <option value=" disabled selected hidden">Select Category</option>
+  <option value="food">🍔 Food</option>
+  <option value="travel">✈️ Travel</option>
+  <option value="shopping">🛍️ Shopping</option>
+  <option value="bills">💡 Bills</option>
+  <option value="other">📌 Other</option>
+</select>
+      <input type="date">
+      <button type="button" id="ex-Btn">Add Expense</button>
+    </div>
+  </div>
+
+  <!-- Right Column -->
+  <div class="right">
+    <div class="showExpense">
+      <div class="btns">
+      <button>All</button>
+      <button>Daily</button>
+      <button>Weekly</button>
+      <button>Monthly</button></div>
+      <div>
+        <label for="category">Select Category:</label>
+        <select id="filled-category">
+          <option value="food">🍔 Food</option>
+          <option value="travel">✈️ Travel</option>
+          <option value="shopping">🛍️ Shopping</option>
+          <option value="bills">💡 Bills</option>
+          <option value="other">📌 Other</option>
+        </select>
+      </div>
+      <p id="show"></p>
+    </div>
+
+    <div class="summary">
+      <h4>Summary</h4>
+      <p>Total Expenses</p>
+    </div>
+  </div>
+</main>
+<script src="script.js"></script>
+</body>
+
+</html>
